@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="source\hfa">
+      <UniqueIdentifier>{7605d23b-a0a8-4235-9dad-e22910377a9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\port">
+      <UniqueIdentifier>{d6131801-e51c-403f-8c66-e0a1ea29e4e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\libgeotiff">
+      <UniqueIdentifier>{07529d56-6c3f-456f-8f74-4f80efcf69cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\libtiff">
+      <UniqueIdentifier>{0aa52b03-6bbb-4dc8-9d76-efb779f42094}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="img2tif.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="imggeotiff.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="rawblockedimage.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="tif_overview.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="hfa\hfaband.cpp">
+      <Filter>source\hfa</Filter>
+    </ClCompile>
+    <ClCompile Include="hfa\hfacompress.cpp">
+      <Filter>source\hfa</Filter>
+    </ClCompile>
+    <ClCompile Include="hfa\hfadictionary.cpp">
+      <Filter>source\hfa</Filter>
+    </ClCompile>
+    <ClCompile Include="hfa\hfaentry.cpp">
+      <Filter>source\hfa</Filter>
+    </ClCompile>
+    <ClCompile Include="hfa\hfafield.cpp">
+      <Filter>source\hfa</Filter>
+    </ClCompile>
+    <ClCompile Include="hfa\hfaopen.cpp">
+      <Filter>source\hfa</Filter>
+    </ClCompile>
+    <ClCompile Include="hfa\hfatype.cpp">
+      <Filter>source\hfa</Filter>
+    </ClCompile>
+    <ClCompile Include="port\cpl_conv.cpp">
+      <Filter>source\port</Filter>
+    </ClCompile>
+    <ClCompile Include="port\cpl_csv.cpp">
+      <Filter>source\port</Filter>
+    </ClCompile>
+    <ClCompile Include="port\cpl_dir.cpp">
+      <Filter>source\port</Filter>
+    </ClCompile>
+    <ClCompile Include="port\cpl_error.cpp">
+      <Filter>source\port</Filter>
+    </ClCompile>
+    <ClCompile Include="port\cpl_findfile.cpp">
+      <Filter>source\port</Filter>
+    </ClCompile>
+    <ClCompile Include="port\cpl_multiproc.cpp">
+      <Filter>source\port</Filter>
+    </ClCompile>
+    <ClCompile Include="port\cpl_path.cpp">
+      <Filter>source\port</Filter>
+    </ClCompile>
+    <ClCompile Include="port\cpl_string.cpp">
+      <Filter>source\port</Filter>
+    </ClCompile>
+    <ClCompile Include="port\cpl_vsi_mem.cpp">
+      <Filter>source\port</Filter>
+    </ClCompile>
+    <ClCompile Include="port\cpl_vsil.cpp">
+      <Filter>source\port</Filter>
+    </ClCompile>
+    <ClCompile Include="port\cpl_vsil_unix_stdio_64.cpp">
+      <Filter>source\port</Filter>
+    </ClCompile>
+    <ClCompile Include="port\cpl_vsil_win32.cpp">
+      <Filter>source\port</Filter>
+    </ClCompile>
+    <ClCompile Include="port\cpl_vsisimple.cpp">
+      <Filter>source\port</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_aux.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_close.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_codec.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_color.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_compress.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_dir.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_dirinfo.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_dirread.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_dirwrite.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_dumpmode.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_error.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_extension.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_fax3.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_fax3sm.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_flush.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_getimage.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_jpeg.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_luv.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_lzw.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_next.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_open.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_packbits.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_pixarlog.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_predict.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_print.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_read.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_strip.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_swab.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_thunder.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_tile.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_version.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_vsi.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_warning.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_write.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libtiff\tif_zip.c">
+      <Filter>source\libtiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libgeotiff\geo_extra.c">
+      <Filter>source\libgeotiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libgeotiff\geo_free.c">
+      <Filter>source\libgeotiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libgeotiff\geo_get.c">
+      <Filter>source\libgeotiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libgeotiff\geo_names.c">
+      <Filter>source\libgeotiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libgeotiff\geo_new.c">
+      <Filter>source\libgeotiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libgeotiff\geo_normalize.c">
+      <Filter>source\libgeotiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libgeotiff\geo_print.c">
+      <Filter>source\libgeotiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libgeotiff\geo_set.c">
+      <Filter>source\libgeotiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libgeotiff\geo_tiffp.c">
+      <Filter>source\libgeotiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libgeotiff\geo_trans.c">
+      <Filter>source\libgeotiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libgeotiff\geo_write.c">
+      <Filter>source\libgeotiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libgeotiff\geotiff_proj4.c">
+      <Filter>source\libgeotiff</Filter>
+    </ClCompile>
+    <ClCompile Include="libgeotiff\xtiff.c">
+      <Filter>source\libgeotiff</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="rawblockedimage.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="hfa\hfa.h">
+      <Filter>source\hfa</Filter>
+    </ClInclude>
+    <ClInclude Include="hfa\hfa_p.h">
+      <Filter>source\hfa</Filter>
+    </ClInclude>
+    <ClInclude Include="port\cpl_config.h">
+      <Filter>source\port</Filter>
+    </ClInclude>
+    <ClInclude Include="port\cpl_conv.h">
+      <Filter>source\port</Filter>
+    </ClInclude>
+    <ClInclude Include="port\cpl_csv.h">
+      <Filter>source\port</Filter>
+    </ClInclude>
+    <ClInclude Include="port\cpl_error.h">
+      <Filter>source\port</Filter>
+    </ClInclude>
+    <ClInclude Include="port\cpl_multiproc.h">
+      <Filter>source\port</Filter>
+    </ClInclude>
+    <ClInclude Include="port\cpl_port.h">
+      <Filter>source\port</Filter>
+    </ClInclude>
+    <ClInclude Include="port\cpl_string.h">
+      <Filter>source\port</Filter>
+    </ClInclude>
+    <ClInclude Include="port\cpl_vsi.h">
+      <Filter>source\port</Filter>
+    </ClInclude>
+    <ClInclude Include="port\cpl_vsi_private.h">
+      <Filter>source\port</Filter>
+    </ClInclude>
+    <ClInclude Include="libtiff\t4.h">
+      <Filter>source\libtiff</Filter>
+    </ClInclude>
+    <ClInclude Include="libtiff\tif_config.h">
+      <Filter>source\libtiff</Filter>
+    </ClInclude>
+    <ClInclude Include="libtiff\tif_dir.h">
+      <Filter>source\libtiff</Filter>
+    </ClInclude>
+    <ClInclude Include="libtiff\tif_fax3.h">
+      <Filter>source\libtiff</Filter>
+    </ClInclude>
+    <ClInclude Include="libtiff\tif_predict.h">
+      <Filter>source\libtiff</Filter>
+    </ClInclude>
+    <ClInclude Include="libtiff\tiff.h">
+      <Filter>source\libtiff</Filter>
+    </ClInclude>
+    <ClInclude Include="libtiff\tiffconf.h">
+      <Filter>source\libtiff</Filter>
+    </ClInclude>
+    <ClInclude Include="libtiff\tiffio.h">
+      <Filter>source\libtiff</Filter>
+    </ClInclude>
+    <ClInclude Include="libtiff\tiffiop.h">
+      <Filter>source\libtiff</Filter>
+    </ClInclude>
+    <ClInclude Include="libtiff\tiffvers.h">
+      <Filter>source\libtiff</Filter>
+    </ClInclude>
+    <ClInclude Include="libtiff\uvcode.h">
+      <Filter>source\libtiff</Filter>
+    </ClInclude>
+    <ClInclude Include="libgeotiff\cpl_serv.h">
+      <Filter>source\libgeotiff</Filter>
+    </ClInclude>
+    <ClInclude Include="libgeotiff\geo_config.h">
+      <Filter>source\libgeotiff</Filter>
+    </ClInclude>
+    <ClInclude Include="libgeotiff\geo_keyp.h">
+      <Filter>source\libgeotiff</Filter>
+    </ClInclude>
+    <ClInclude Include="libgeotiff\geo_normalize.h">
+      <Filter>source\libgeotiff</Filter>
+    </ClInclude>
+    <ClInclude Include="libgeotiff\geo_tiffp.h">
+      <Filter>source\libgeotiff</Filter>
+    </ClInclude>
+    <ClInclude Include="libgeotiff\geokeys.h">
+      <Filter>source\libgeotiff</Filter>
+    </ClInclude>
+    <ClInclude Include="libgeotiff\geonames.h">
+      <Filter>source\libgeotiff</Filter>
+    </ClInclude>
+    <ClInclude Include="libgeotiff\geotiff.h">
+      <Filter>source\libgeotiff</Filter>
+    </ClInclude>
+    <ClInclude Include="libgeotiff\geotiffio.h">
+      <Filter>source\libgeotiff</Filter>
+    </ClInclude>
+    <ClInclude Include="libgeotiff\geovalues.h">
+      <Filter>source\libgeotiff</Filter>
+    </ClInclude>
+    <ClInclude Include="libgeotiff\xtiffio.h">
+      <Filter>source\libgeotiff</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libgeotiff\epsg_datum.inc">
+      <Filter>source\libgeotiff</Filter>
+    </None>
+    <None Include="libgeotiff\epsg_ellipse.inc">
+      <Filter>source\libgeotiff</Filter>
+    </None>
+    <None Include="libgeotiff\epsg_gcs.inc">
+      <Filter>source\libgeotiff</Filter>
+    </None>
+    <None Include="libgeotiff\epsg_pcs.inc">
+      <Filter>source\libgeotiff</Filter>
+    </None>
+    <None Include="libgeotiff\epsg_pm.inc">
+      <Filter>source\libgeotiff</Filter>
+    </None>
+    <None Include="libgeotiff\epsg_proj.inc">
+      <Filter>source\libgeotiff</Filter>
+    </None>
+    <None Include="libgeotiff\epsg_units.inc">
+      <Filter>source\libgeotiff</Filter>
+    </None>
+    <None Include="libgeotiff\epsg_vertcs.inc">
+      <Filter>source\libgeotiff</Filter>
+    </None>
+    <None Include="libgeotiff\geo_ctrans.inc">
+      <Filter>source\libgeotiff</Filter>
+    </None>
+    <None Include="libgeotiff\geokeys.inc">
+      <Filter>source\libgeotiff</Filter>
+    </None>
+  </ItemGroup>
+</Project>

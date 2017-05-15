@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B627E39B-CF4F-469A-88CA-3FD7D76E8B0F}</ProjectGuid>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>img2tiff</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CLRSupport>false</CLRSupport>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)\port;$(ProjectDir)\hfa;$(ProjectDir)\libgeotiff;$(ProjectDir)\libtiff;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="hfa\hfaband.cpp" />
+    <ClCompile Include="hfa\hfacompress.cpp" />
+    <ClCompile Include="hfa\hfadictionary.cpp" />
+    <ClCompile Include="hfa\hfaentry.cpp" />
+    <ClCompile Include="hfa\hfafield.cpp" />
+    <ClCompile Include="hfa\hfaopen.cpp" />
+    <ClCompile Include="hfa\hfatype.cpp" />
+    <ClCompile Include="img2tif.cpp" />
+    <ClCompile Include="imggeotiff.cpp" />
+    <ClCompile Include="libgeotiff\geotiff_proj4.c" />
+    <ClCompile Include="libgeotiff\geo_extra.c" />
+    <ClCompile Include="libgeotiff\geo_free.c" />
+    <ClCompile Include="libgeotiff\geo_get.c" />
+    <ClCompile Include="libgeotiff\geo_names.c" />
+    <ClCompile Include="libgeotiff\geo_new.c" />
+    <ClCompile Include="libgeotiff\geo_normalize.c" />
+    <ClCompile Include="libgeotiff\geo_print.c" />
+    <ClCompile Include="libgeotiff\geo_set.c" />
+    <ClCompile Include="libgeotiff\geo_tiffp.c" />
+    <ClCompile Include="libgeotiff\geo_trans.c" />
+    <ClCompile Include="libgeotiff\geo_write.c" />
+    <ClCompile Include="libgeotiff\xtiff.c" />
+    <ClCompile Include="libtiff\tif_aux.c" />
+    <ClCompile Include="libtiff\tif_close.c" />
+    <ClCompile Include="libtiff\tif_codec.c" />
+    <ClCompile Include="libtiff\tif_color.c" />
+    <ClCompile Include="libtiff\tif_compress.c" />
+    <ClCompile Include="libtiff\tif_dir.c" />
+    <ClCompile Include="libtiff\tif_dirinfo.c" />
+    <ClCompile Include="libtiff\tif_dirread.c" />
+    <ClCompile Include="libtiff\tif_dirwrite.c" />
+    <ClCompile Include="libtiff\tif_dumpmode.c" />
+    <ClCompile Include="libtiff\tif_error.c" />
+    <ClCompile Include="libtiff\tif_extension.c" />
+    <ClCompile Include="libtiff\tif_fax3.c" />
+    <ClCompile Include="libtiff\tif_fax3sm.c" />
+    <ClCompile Include="libtiff\tif_flush.c" />
+    <ClCompile Include="libtiff\tif_getimage.c" />
+    <ClCompile Include="libtiff\tif_jpeg.c" />
+    <ClCompile Include="libtiff\tif_luv.c" />
+    <ClCompile Include="libtiff\tif_lzw.c" />
+    <ClCompile Include="libtiff\tif_next.c" />
+    <ClCompile Include="libtiff\tif_open.c" />
+    <ClCompile Include="libtiff\tif_packbits.c" />
+    <ClCompile Include="libtiff\tif_pixarlog.c" />
+    <ClCompile Include="libtiff\tif_predict.c" />
+    <ClCompile Include="libtiff\tif_print.c" />
+    <ClCompile Include="libtiff\tif_read.c" />
+    <ClCompile Include="libtiff\tif_strip.c" />
+    <ClCompile Include="libtiff\tif_swab.c" />
+    <ClCompile Include="libtiff\tif_thunder.c" />
+    <ClCompile Include="libtiff\tif_tile.c" />
+    <ClCompile Include="libtiff\tif_version.c" />
+    <ClCompile Include="libtiff\tif_vsi.c" />
+    <ClCompile Include="libtiff\tif_warning.c" />
+    <ClCompile Include="libtiff\tif_write.c" />
+    <ClCompile Include="libtiff\tif_zip.c" />
+    <ClCompile Include="port\cpl_conv.cpp" />
+    <ClCompile Include="port\cpl_csv.cpp" />
+    <ClCompile Include="port\cpl_dir.cpp" />
+    <ClCompile Include="port\cpl_error.cpp" />
+    <ClCompile Include="port\cpl_findfile.cpp" />
+    <ClCompile Include="port\cpl_multiproc.cpp" />
+    <ClCompile Include="port\cpl_path.cpp" />
+    <ClCompile Include="port\cpl_string.cpp" />
+    <ClCompile Include="port\cpl_vsil.cpp" />
+    <ClCompile Include="port\cpl_vsil_unix_stdio_64.cpp" />
+    <ClCompile Include="port\cpl_vsil_win32.cpp" />
+    <ClCompile Include="port\cpl_vsisimple.cpp" />
+    <ClCompile Include="port\cpl_vsi_mem.cpp" />
+    <ClCompile Include="rawblockedimage.cpp" />
+    <ClCompile Include="tif_overview.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="hfa\hfa.h" />
+    <ClInclude Include="hfa\hfa_p.h" />
+    <ClInclude Include="libgeotiff\cpl_serv.h" />
+    <ClInclude Include="libgeotiff\geokeys.h" />
+    <ClInclude Include="libgeotiff\geonames.h" />
+    <ClInclude Include="libgeotiff\geotiff.h" />
+    <ClInclude Include="libgeotiff\geotiffio.h" />
+    <ClInclude Include="libgeotiff\geovalues.h" />
+    <ClInclude Include="libgeotiff\geo_config.h" />
+    <ClInclude Include="libgeotiff\geo_keyp.h" />
+    <ClInclude Include="libgeotiff\geo_normalize.h" />
+    <ClInclude Include="libgeotiff\geo_tiffp.h" />
+    <ClInclude Include="libgeotiff\xtiffio.h" />
+    <ClInclude Include="libtiff\t4.h" />
+    <ClInclude Include="libtiff\tiff.h" />
+    <ClInclude Include="libtiff\tiffconf.h" />
+    <ClInclude Include="libtiff\tiffio.h" />
+    <ClInclude Include="libtiff\tiffiop.h" />
+    <ClInclude Include="libtiff\tiffvers.h" />
+    <ClInclude Include="libtiff\tif_config.h" />
+    <ClInclude Include="libtiff\tif_dir.h" />
+    <ClInclude Include="libtiff\tif_fax3.h" />
+    <ClInclude Include="libtiff\tif_predict.h" />
+    <ClInclude Include="libtiff\uvcode.h" />
+    <ClInclude Include="port\cpl_config.h" />
+    <ClInclude Include="port\cpl_conv.h" />
+    <ClInclude Include="port\cpl_csv.h" />
+    <ClInclude Include="port\cpl_error.h" />
+    <ClInclude Include="port\cpl_multiproc.h" />
+    <ClInclude Include="port\cpl_port.h" />
+    <ClInclude Include="port\cpl_string.h" />
+    <ClInclude Include="port\cpl_vsi.h" />
+    <ClInclude Include="port\cpl_vsi_private.h" />
+    <ClInclude Include="rawblockedimage.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libgeotiff\epsg_datum.inc" />
+    <None Include="libgeotiff\epsg_ellipse.inc" />
+    <None Include="libgeotiff\epsg_gcs.inc" />
+    <None Include="libgeotiff\epsg_pcs.inc" />
+    <None Include="libgeotiff\epsg_pm.inc" />
+    <None Include="libgeotiff\epsg_proj.inc" />
+    <None Include="libgeotiff\epsg_units.inc" />
+    <None Include="libgeotiff\epsg_vertcs.inc" />
+    <None Include="libgeotiff\geokeys.inc" />
+    <None Include="libgeotiff\geo_ctrans.inc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
